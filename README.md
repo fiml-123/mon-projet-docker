@@ -1,10 +1,6 @@
 # mon-projet-docker
 Projet realiser pour le tp linux
-
-
-## README.md
-
-# Projet Docker Multi-conteneurs
+Cliquer sur le 'raw' dans le fichier mon-projet-docker pour telecharger le .zip du projet
 
 ## Description
 Ce projet montre un exemple simple d'utilisation de Docker Compose pour faire communiquer deux conteneurs Docker :

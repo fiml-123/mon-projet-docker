@@ -1,6 +1,6 @@
 # mon-projet-docker
-Projet realiser pour le tp linux
-Cliquer sur le 'raw' dans le fichier mon-projet-docker pour telecharger le .zip du projet
+Projet realiser pour le tp linux.
+Télécharger depuis une VM le .zip nommé mon-projet-docker.
 
 ## Description
 Ce projet montre un exemple simple d'utilisation de Docker Compose pour faire communiquer deux conteneurs Docker :
@@ -29,7 +29,7 @@ mon-projet-docker/
 ## Cloner et utiliser le projet sur une autre VM
 
 ```bash
-git clone <url-du-depot>
+git clone [<url-du-depot>](https://github.com/fiml-123/mon-projet-docker)
 cd mon-projet-docker
 docker compose up --build
 ```
@@ -44,10 +44,6 @@ docker compose up --build
 
 Docker Compose crée automatiquement un réseau virtuel et configure un DNS interne. Ainsi, le conteneur `client` peut faire des requêtes HTTP à `http://web:5000` sans besoin d'IP explicite.
 
-## Exemple de sortie attendue
-```
-client_1  | Réponse du serveur web: Hello depuis le conteneur web !
-```
 ## Tester le projet
 
 1. Assurez-vous que Docker et Docker Compose sont installés sur votre machine.
@@ -65,3 +61,8 @@ client_1  | Réponse du serveur web: Hello depuis le conteneur web !
    ```
    Hello depuis le conteneur web !
    ```
+
+   ## Exemple de sortie attendue
+```
+client_1  | Réponse du serveur web: Hello depuis le conteneur web !
+```

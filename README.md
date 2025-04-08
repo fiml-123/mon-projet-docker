@@ -48,3 +48,20 @@ Docker Compose crée automatiquement un réseau virtuel et configure un DNS inte
 ```
 client_1  | Réponse du serveur web: Hello depuis le conteneur web !
 ```
+## Tester le projet
+
+1. Assurez-vous que Docker et Docker Compose sont installés sur votre machine.
+2. Ouvrez un terminal dans le dossier du projet.
+3. Exécutez :
+   ```bash
+   docker compose up --build
+   ```
+4. Observez les logs du conteneur `client`, il doit afficher la réponse du conteneur `web`.
+5. Vous pouvez aussi tester manuellement dans un autre terminal :
+   ```bash
+   curl http://localhost:5000
+   ```
+   Cela renverra :
+   ```
+   Hello depuis le conteneur web !
+   ```
